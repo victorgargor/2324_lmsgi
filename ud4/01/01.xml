@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail SYSTEM "01.dtd"> 
+<mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="01.xsd">
+    <remitente>Pepe@gmail.com</remitente>
+    <destinatario>Laura@gmail.com</destinatario>
+    <destinatario>Maria@gmail.com</destinatario>
+    <fecha_mensaje>1888-05-12</fecha_mensaje>
+    <mensaje>Hola Mundo, como estás</mensaje>
+</mail>

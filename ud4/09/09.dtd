@@ -1,0 +1,5 @@
+<!ENTITY obra "El Quijote">
+<!ENTITY escritor "Miguel de Cervantes">
+<!ENTITY fecha "29/09/1547">
+<!ELEMENT textos (texto*)>
+<!ELEMENT texto (#PCDATA)>

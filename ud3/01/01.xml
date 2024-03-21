@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Víctor García El País</title>
+        <link>https://elpais.com/</link>
+        <description>Noticias de última hora</description>
+        <language>es-es</language>
+        <lastBuildDate>Mon, 15 Jan 2024 12:15:00 +0100</lastBuildDate>
+        <category>Noticias</category>
+        <item>
+            <title>Uno de cada tres hogares llega justo a fin de mes, aunque mejora levemente la percepción económica</title>
+            <link>https://elpais.com/espana/2024-01-15/uno-de-cada-tres-hogares-llega-justo-a-fin-de-mes-aunque-mejora-levemente-la-percepcion-economica.html</link>
+            <description><![CDATA[<div>La inflación de la zona euro cerró diciembre en el 2,9% frente al 9,2% de 2022</div>]]></description>
+            <guid>https://elpais.com/espana/2024-01-15/uno-de-cada-tres-hogares-llega-justo-a-fin-de-mes-aunque-mejora-levemente-la-percepcion-economica.html</guid>
+            <category>Economía</category>
+            <pubDate>Mon, 15 Jan 2024 05:40:00 +0100</pubDate>
+            <enclosure url="https://imagenes.elpais.com/resizer/QqtzpJjTy14hmU3Tol0ogkj0kio=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/IS44JUQRWFHYPGHZWH57ATDDXA.jpg" length="230" type="image/jpg"/>
+        </item>
+        <item>
+            <title>El PSOE se recupera ligeramente del impacto negativo de la amnistía</title>
+            <link>https://elpais.com/espana/2024-01-15/el-psoe-se-recupera-ligeramente-del-impacto-negativo-de-la-amnistia.html</link>
+            <description><![CDATA[<div>El bloque de la derecha mantiene su ventaja, aunque Vox es el partido que más pierde en estimación de voto desde las elecciones de julio</div>]]></description>
+            <guid>https://elpais.com/espana/2024-01-15/el-psoe-se-recupera-ligeramente-del-impacto-negativo-de-la-amnistia.html</guid>
+            <category>Política</category>
+            <pubDate>Mon, 15 Jan 2024 05:40:00 +0100</pubDate>
+            <enclosure url="https://imagenes.elpais.com/resizer/sUa-imUSvdItUGqkErbB-ihWVT4=/1200x0/filters:focal(720x1180:730x1190)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/4M3GU7QABRAZTPLYE6GT5N7AAU.jpg" length="221" type="image/jpg"/>
+        </item>
+        <item>
+            <title>Arévalo asume como presidente de Guatemala tras el intento del Congreso de torpedear la investidura</title>
+            <link>https://elpais.com/america/2024-01-15/arevalo-asume-como-presidente-de-guatemala-tras-el-intento-del-congreso-de-torpedear-la-investidura.html</link>
+            <description><![CDATA[<div>Algunos diputados retrasaron nueve horas la ceremonia y dieron una muestra en vivo de cómo operan las fuerzas que el mandatario lleva meses denunciando</div>]]></description>
+            <guid>https://elpais.com/america/2024-01-15/arevalo-asume-como-presidente-de-guatemala-tras-el-intento-del-congreso-de-torpedear-la-investidura.html</guid>
+            <category>Política</category>
+            <pubDate>Mon, 15 Jan 2024 07:21:00 +0100</pubDate>
+            <enclosure url="https://imagenes.elpais.com/resizer/Jk-sm5iE1NnsXsTicaOrDg2HeXM=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7SOGUS6AZZG7ZMQBNVEKDRRAVY.jpg" length="231" type="image/jpg"/>
+        </item>
+    </channel>
+</rss> 

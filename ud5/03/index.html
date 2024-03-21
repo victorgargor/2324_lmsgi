@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 5 Xpath Víctor García Gordón</title>
+    <link rel="stylesheet" href="../estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Unidad 5. Xpath</h1>
+        <h2>Hoja 3. Ejercicio 3</h2>
+    </header>
+    <main>
+        <nav>
+            <ol>
+                <li><a href="/ud5/03/03.dtd">DTD</a></li>
+                <li><a href="/ud5/03/03.xml">XML</a></li>
+                <li><a href="/ud5/03/03.xsd">XML Schema</a></li>
+            </ol> 
+        </nav>
+        <div>Dado los siguientes datos  XPath online real-time tester, evaluator and generator for 
+            XML & HTML (xpather.com)  se pide realizar las siguientes consultas:
+        </div>
+        <div>
+            <ol>
+                <li>Nombre de la Universidad:
+                    <code>/universidad/nombre/text()</code>
+                    <div><img src="/ud5/03/images/01.png" alt="resultado1"></div>
+                </li>
+                <li>Pais de la Universidad: 
+                    <code>/universidad/pais/text()</code>
+                    <div><img src="/ud5/03/images/02.png" alt="resultado2"></div>
+                </li>
+                <li>Nombres de las Carreras: 
+                    <code>/universidad/carreras/carrera/nombre/text()</code>
+                    <div><img src="/ud5/03/images/03.png" alt="resultado3"></div>
+                </li>
+                <li>Años de plan de estudio de las carreras: 
+                    <code>/universidad/carreras/carrera/plan/text()</code>
+                    <div><img src="/ud5/03/images/04.png" alt="resultado4"></div>
+                </li>
+                <li>Nombres de todos los alumnos:
+                    <code>/universidad/alumnos/alumno/nombre/text()</code>
+                    <div><img src="/ud5/03/images/05.png" alt="resultado5"></div>
+                </li>
+                <li>Identificadores de todas las carreras: 
+                    <code>/universidad/carreras/carrera/@id</code>
+                    <div><img src="/ud5/03/images/06.png" alt="resultado6"></div>
+                </li>
+                <li>Datos de la carrera cuyo id es c01: 
+                    <code>/universidad/carreras/carrera[@id="c01"]/*</code>
+                    <div><img src="/ud5/03/images/07.png" alt="resultado7"></div>
+                </li>
+                <li>Centro en que se estudia de la carrera cuyo id es c02:
+                    <code>/universidad/carreras/carrera[@id="c02"]/centro/text()</code>
+                    <div><img src="/ud5/03/images/08.png" alt="resultado8"></div>
+                </li>
+                <li>Nombre de las carreras que tengan subdirector: 
+                    <code>/universidad/carreras/carrera[./subdirector]/nombre/text()</code>
+                    <div><img src="/ud5/03/images/09.png" alt="resultado9"></div>
+                </li>
+                <li>Nombre de los alumnos que estén haciendo proyecto:
+                    <code>/universidad/alumnos/alumno[./estudios/proyecto]/nombre/text()</code>
+                    <div><img src="/ud5/03/images/10.png" alt="resultado10"></div>
+                </li>
+                <li>Códigos de las carreras en las que hay algún alumno matriculado: 
+                    <code>/universidad/carreras/carrera[@id=/universidad/alumnos/alumno/estudios/carrera/@codigo]/@id</code>
+                    <div><img src="/ud5/03/images/11.png" alt="resultado11"></div>
+                </li>
+                <li>Apellidos y Nombre de los alumnos con beca:
+                    <code>/universidad/alumnos/alumno[@beca]/apellido1, /universidad/alumnos/alumno[@beca]/apellido2, /universidad/alumnos/alumno[@beca]/nombre</code>
+                    <div><img src="/ud5/03/images/12.png" alt="resultado12"></div>
+                </li>
+                <li>Nombre de las asignaturas de la titulación c04:
+                    <code>/universidad/asignaturas/asignatura[@titulacion="c04"]/nombre</code>
+                    <div><img src="/ud5/03/images/13.png" alt="resultado13"></div>
+                </li>
+                <li>Nombre de las asignaturas de segundo trimestre:
+                    <code>/universidad/asignaturas/asignatura[./trimestre=2]/nombre</code>
+                    <div><img src="/ud5/03/images/14.png" alt="resultado14"></div>
+                </li>
+                <li>Nombre de las asignaturas que no tienen 4 créditos teóricos: 
+                    <code>/universidad/asignaturas/asignatura[./creditos_teoricos!=4]/nombre</code>
+                    <div><img src="/ud5/03/images/15.png" alt="resultado15"></div>
+                </li>
+                <li>Código de la carrera que estudia el último alumno:
+                    <code>/universidad/alumnos/alumno[last()]/estudios/carrera/@codigo</code>
+                    <div><img src="/ud5/03/images/16.png" alt="resultado16"></div>
+                </li>
+                <li>Código de las asignaturas que estudian mujeres:
+                    <code>/universidad/alumnos/alumno[./sexo='Mujer']/estudios/carrera/@codigo</code>
+                    <div><img src="/ud5/03/images/17.png" alt="resultado17"></div>
+                </li>
+                <li>Nombre de los alumnos que matriculados en la asignatura a02:
+                    <code>/universidad/alumnos/alumno[./estudios/asignaturas/asignatura/@codigo='a02']/sexo</code>
+                    <div><img src="/ud5/03/images/18.png" alt="resultado18"></div>
+                </li>
+                <li>Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+                    <code>/universidad/alumnos/alumno/estudios[./asignaturas/asignatura]/carrera/@codigo</code>
+                    <div><img src="/ud5/03/images/19.png" alt="resultado19"></div>
+                </li>
+                <li>Apellidos de todos los hombres:
+                    <code>/universidad/alumnos/alumno[./sexo='Hombre']/apellido1 | /universidad/alumnos/alumno[./sexo='Hombre']/apellido2</code>
+                    <div><img src="/ud5/03/images/20.png" alt="resultado20"></div>
+                </li>
+                <li>Nombre de la carrera que estudia Víctor Manuel:
+                    <code>/universidad/carreras/carrera[@id=/universidad/alumnos/alumno[./nombre='Víctor Manuel']/estudios/carrera/@codigo]/nombre</code>
+                    <div><img src="/ud5/03/images/21.png" alt="resultado21"></div>
+                </li>
+                <li>Nombre de las asignaturas que estudia Luisa:
+                    <code>/universidad/asignaturas/asignatura[@id=/universidad/alumnos/alumno[./nombre='Luisa']/estudios/asignaturas/asignatura/@codigo]/nombre</code>
+                    <div><img src="/ud5/03/images/22.png" alt="resultado22"></div>
+                </li>
+                <li>Primer apellido de los alumnos matriculados en Ingeniería del Software: 
+                    <code>/universidad/alumnos/alumno[./estudios/asignaturas/asignatura/@codigo=/universidad/asignaturas/asignatura[./nombre='Ingeniería del Software']/@id]/apellido1</code>
+                    <div><img src="/ud5/03/images/23.png" alt="resultado23"></div>
+                </li>            
+                <li>Nombre de las carreras que estudian los alumnos matriculados en la asignatura Tecnología 
+                    de los Alimentos:
+                    <code>/universidad/carreras/carrera[@id=/universidad/alumnos/alumno/estudios[./asignaturas/asignatura/@codigo=/universidad/asignaturas/asignatura[./nombre='Tecnología de los Alimentos']/@id]/carrera/@codigo]/nombre</code>
+                    <div><img src="/ud5/03/images/24.png" alt="resultado24"></div>
+                </li>               
+                <li>Nombre de los alumnos matriculados en carreras que no tienen subdirector:
+                    <code>/universidad/alumnos/alumno[./estudios/carrera/@codigo!=/universidad/carreras/carrera[./subdirector]/@id]/nombre</code>
+                    <div><img src="/ud5/03/images/25.png" alt="resultado25"></div>
+                </li>             
+                <li>Nombre de los alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien 
+                    la carrera de I.T. Informática                      
+                    <code>/universidad/alumnos/alumno[./estudios/asignaturas/asignatura/@codigo=/universidad/asignaturas/asignatura[./creditos_practicos=0]/@id and ./estudios/carrera/@codigo=/universidad/carreras/carrera[./nombre='I.T. Informática']/@id]/nombre</code>
+                    <div><img src="/ud5/03/images/26.png" alt="resultado26"></div>
+                </li>            
+                <li>Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002
+                    <code>//alumno[.//carrera/@codigo=//carrera[not(plan>=2002)]/@id]/nombre</code>
+                    <div><img src="/ud5/03/images/27.png" alt="resultado27"></div>
+                </li>    
+            </ol>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+code {
+    background-color: lightgrey;
+    line-height: 1.5em;
+    border: solid;
+    border-width: 3px;
+    border-color: lemonchiffon;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+ color: blue;
+}
+
+li div {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: var(--color3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 1500px;
+    height: 53px;
+    width: 100%;
+}
+  
+nav ol {
+    list-style: none;
+}
+  
+nav ol a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+}
+  
+nav ol {
+    display: flex;
+    padding: 8px;
+    gap: 128px;
+}
+
+nav :hover {
+    color: yellow;
+}

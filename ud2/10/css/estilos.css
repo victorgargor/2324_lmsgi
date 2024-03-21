@@ -1,0 +1,71 @@
+*{
+    color: white;
+}
+
+header{
+    background-color: greenyellow;
+
+    display: flex;
+}
+h1{
+    padding-top: 80px;
+    margin: 0 auto;
+}
+nav{
+    background-color: greenyellow;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+tr, td, th{
+    border: 1px solid black;
+    
+}
+
+#horario header{
+    margin-top: 30px;
+}
+#horario{
+    background-color: grey;
+}
+/*SI PONIA UNA SOLA CASILLA NO VALIDA AL REPETIRSE LOS ID*/
+#programacion, #casillaP1, #casillaP2, #casillaP3, #casillaP4, #casillaP5, #casillaP6, #casillaP7, #casillaP8{
+    background-color: olivedrab;
+}
+#bases, #casillaB1, #casillaB2, #casillaB3, #casillaB4, #casillaB5, #casillaB6, #casillaB7, #casillaB8, #casillaB9, #casillaB10{
+    background-color: palevioletred;
+}
+#lenguaje, #casillaL1, #casillaL2, #casillaL3, #casillaL4, #casillaL5, #casillaL6{
+    background-color: rgb(176, 176, 20);
+}
+#entornos, #casillaE1, #casillaE2, #casillaE3, #casillaE4, #casillaE5, #casillaE6, #casillaE7{
+    background-color: lime;
+}
+#sistemas, #casillaS1, #casillaS2, #casillaS3, #casillaS4, #casillaS5, #casillaS6, #casillaS7{
+    background-color: burlywood;
+}
+#fol, #casillaF1, #casillaF2{
+    background-color: grey;
+}
+p{
+    background-color: lightgreen;
+}
+#footer1, #footer2{
+    background-color: aquamarine;
+}

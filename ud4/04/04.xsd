@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="curriculum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="datos_personales"/>
+                <xs:element ref="contacto"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="datos_personales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="nacimiento" type="xs:string"/>
+                <xs:element ref="residencia"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="residencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ciudad" type="xs:string"/>
+                <xs:element name="pais" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contacto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="telefono" type="xs:string"/>
+                <xs:element name="correo" type="xs:string"/>
+                <xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+                <xs:element ref="competencias"/>
+                <xs:element ref="formaciones"/>
+                <xs:element ref="experiencias"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="competencias">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="competencia" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="competencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre_competencia" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="nivel" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="bajo"/>
+                        <xs:enumeration value="medio"/>
+                        <xs:enumeration value="alto"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="formaciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="formacion" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="formacion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulacion" type="xs:string"/>
+                <xs:element name="centro" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="anyo" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="experiencias">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="experiencia" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="experiencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="puesto" type="xs:string"/>
+                <xs:element name="empresa" type="xs:string"/>
+                <xs:element name="anyo_inicio" type="xs:string"/>
+                <xs:element name="anyo_fin" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<!ELEMENT pagina (receta+)>
+<!ELEMENT receta (nombre, descripcion?, tiempo, ingredientes, instrucciones?)>
+<!ATTLIST receta plato (primero|segundo|postre) "primero">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT tiempo EMPTY><!--Los tiempos valores entre 1-999-->
+<!ATTLIST tiempo preparacion CDATA #REQUIRED>
+<!ATTLIST tiempo coccion CDATA #IMPLIED>
+<!ELEMENT ingredientes (ingrediente+)>
+<!ELEMENT ingrediente (nombrei, cantidad?)>
+<!ELEMENT nombrei (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ATTLIST cantidad unidad (gramos|pizca|mililitros|cucharada|chorro) #IMPLIED>
+<!ELEMENT instrucciones (paso+)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST pagina xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST pagina xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

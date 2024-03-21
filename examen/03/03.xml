@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manual SYSTEM "03.dtd">
+<manual codigo="MAN01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="03.xsd">
+    <servicio>Servidor Apache</servicio>
+    <descripcion>
+        El servidor HTTP Apache de código abierto, 
+        para plataformas Unix, Microsoft Windows, Macintosh y 
+        otras, implementa HTTP/1.1 y sitios virtuales
+    </descripcion>
+    <version>2.4</version>
+    <fecha_actualizacion>2024-03-12</fecha_actualizacion> 
+    <requisitos_del_sistema>
+        <sistema_operativo>Linux</sistema_operativo>
+        <memoria_ram medida="Gb">2</memoria_ram>
+        <espacio_en_disco medida="Gb">100</espacio_en_disco>
+        <puertos_disponibles>80 y 443</puertos_disponibles>
+    </requisitos_del_sistema>
+    <otros_datos>
+        <url pagina="oficial">https://httpd.apache.org/</url>
+        <url pagina="wiki">https://es.wikipedia.org/wiki/ServidorHTTPApache</url>
+    </otros_datos>
+    <pasos_de_instalacion>
+        <paso>
+            <comando><![CDATA[sudo apt install apache2]]></comando>
+            <descripcion2>Descargar e instalar el paquete apache2</descripcion2>
+        </paso>
+        <paso>
+            <comando><![CDATA[sudo service apache2 status]]></comando>
+            <descripcion2>Comprobar el estado del servicio</descripcion2>
+        </paso>
+        <paso>
+            <comando><![CDATA[sudo ufw allow Apache]]></comando>
+            <descripcion2>Abrir el cortafuegos el puerto 80 y 443</descripcion2>
+        </paso>
+    </pasos_de_instalacion>
+</manual>

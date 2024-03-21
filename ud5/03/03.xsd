@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="universidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre">
+                    <xs:complexType mixed="true">
+                        <xs:attribute name="year"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="fechaconstruccion"/>
+                <xs:element name="pais"/>
+                <xs:element name="carreras">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="carrera" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="plan"/>
+                                        <xs:element name="creditos"/>
+                                        <xs:element name="centro"/>
+                                        <xs:element name="subdirector" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asignatura" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="creditos_teoricos"/>
+                                        <xs:element name="creditos_practicos"/>
+                                        <xs:element name="trimestre"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"/>
+                                    <xs:attribute name="titulacion"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="alumnos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alumno" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="apellido1"/>
+                                        <xs:element name="apellido2"/>
+                                        <xs:element name="nombre"/>
+                                        <xs:element name="sexo"/>
+                                        <xs:element name="estudios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="carrera">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="codigo"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="asignaturas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="asignatura" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="codigo"/>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="proyecto" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"/>
+                                    <xs:attribute name="beca" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

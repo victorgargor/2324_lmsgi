@@ -1,0 +1,7 @@
+<!ELEMENT continente (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT capital (#PCDATA)>
+<!ELEMENT fila (continente, pais, capital)>
+<!ELEMENT tabla (fila+)>
+<!ATTLIST tabla xmlns:xsi CDATA #IMPLIED > <!-- para que este doblemente validado -->
+<!ATTLIST tabla xsi:noNamespaceSchemaLocation CDATA #IMPLIED >

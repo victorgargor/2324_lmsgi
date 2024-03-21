@@ -1,0 +1,29 @@
+<!ELEMENT curriculum (datos_personales,contacto)>
+<!ELEMENT datos_personales (nombre,apellidos,nacimiento,residencia)>
+<!ELEMENT contacto (telefono,correo,linkedin?,descripcion,competencias,formaciones,experiencias)>
+<!ELEMENT residencia (ciudad,pais)>
+<!ELEMENT competencias (competencia+)>
+<!ELEMENT competencia (nombre_competencia+)>
+<!ELEMENT formaciones (formacion+)>
+<!ELEMENT formacion (titulacion+,centro+)>
+<!ELEMENT experiencias (experiencia+)>
+<!ELEMENT experiencia (puesto,empresa,anyo_inicio,anyo_fin?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT nombre_competencia (#PCDATA)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT centro (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT anyo_inicio (#PCDATA)>
+<!ELEMENT anyo_fin (#PCDATA)>
+<!ATTLIST competencia nivel (bajo|medio|alto) "bajo">
+<!ATTLIST formacion anyo CDATA " ">
+<!ATTLIST curriculum xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST curriculum xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input[required]{
+            border: 1px solid red;
+        }
+        input[type=text],input[type=email],input[type=url], textarea{
+            background-color: grey;
+        }
+        label{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        input[id=LblNombre]{
+            width: 100px;
+        }
+        input[type=checkbox]{
+            width: 25px; height: 25px;
+        }
+        input[type=time],input[type=week],input[type=month]{
+            width:300px; height:2em;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+    <title>Ud2-03 Víctor García Gordón</title>
+</head>
+<body>
+    <header>
+        <h1>Plantilla de formulario de Kimetsu No Yaiba</h1>
+    </header>
+    <main>
+        <form action="#" method="GET" autocomplete="off">
+            <fieldset>
+                <legend>Datos del Personaje</legend>
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña"
+                        required size="15">
+                </div>
+                <div>
+                    <label for="LblNombre">Nombre:</label>
+                    <input type="text" name="nombre" id="LblNombre" placeholder="¿Cómo vas a llamar a tu guerrero?"
+                        minlength="3" maxlength="20" size="26" required>
+                </div>
+                <div>
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ponga su email de cazador de demonios"
+                        minlength="5" maxlength="30" size="32" multiple
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}"
+                        placeholder="Ejemplo: 1234567890" required>
+                </div>
+                <div>
+                    <label for="LblFechaNacimiento">Fecha Nacimiento:</label>
+                    <input type="date" name="fechanacimiento" id="LblFechaNacimiento" min="1980-01-01" max="2050-01-01"
+                        value="2023-11-02">
+                </div>
+                <div>
+                    <label for="personaje">Selecciona un Compañero:</label>
+                    <select id="personaje" name="personaje">
+                        <option value="tanjiro">Tanjiro Kamado</option>
+                        <option value="nezuko">Nezuko Kamado</option>
+                        <option value="zenitsu">Zenitsu Agatsuma</option>
+                        <option value="inosuke">Inosuke Hashibira</option>
+                        <option value="giyu">Giyu Tomioka</option>
+                        <option value="muzan">Muzan Kibutsuji</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentario">Datos Adicionales:</label>
+                    <textarea id="comentario" name="comentario" rows="1" cols="40"></textarea>
+                </div>
+                <input type="reset" value="Restablecer">
+            </fieldset>
+            <fieldset>
+                <legend>Buscar Demonios</legend>
+                <div>
+                    <label for="busqueda">Buscar:</label>
+                    <input type="search" id="busqueda" name="demonios" placeholder="Nombre del Demonio" autofocus>
+                </div>
+                <div>
+                    <label for="web">Link de su Retrato:</label>
+                    <input type="url" id="web" name="web" placeholder="https://www.ejemplo.com">
+                </div>
+                <input type="submit" value="Enviar">
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Respiración</legend>
+                <div>
+                    <input type="radio" name="respiracion" value="RS" id="respiracionSolar" checked>
+                    <label for="respiracionSolar">Respiración Solar</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RL" id="respiracionLunar">
+                    <label for="respiracionLunar">Respiración Lunar</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RA" id="respiracionAgua">
+                    <label for="respiracionAgua">Respiración del Agua</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RLL" id="respiracionLlama">
+                    <label for="respiracionLlama">Respiración de la Llama</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RR" id="respiracionRayo">
+                    <label for="respiracionRayo">Respiración del Rayo</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RV" id="respiracionViento">
+                    <label for="respiracionViento">Respiración del Viento</label>
+                </div>
+                <div>
+                    <input type="radio" name="respiracion" value="RRC" id="respiracionRoca">
+                    <label for="respiracionRoca">Respiración de la Roca</label>
+                </div>
+                <div>
+                    <!--Esto es para mostrar contenido incrustado: videos de YouTube, fotos etc.-->
+                    <iframe
+                        src="https://thefreakhunterhome.files.wordpress.com/2022/02/respiraciones-kimetsu-no-yaiba.jpg?w=1024"
+                        width="150" height="150"></iframe>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pilar/es que te entrenarán</legend>
+                <div>
+                    <input type="checkbox" name="nombrepilaramor" value="1" id="idAmor" checked>
+                    <label for="idAmor">Pilar Amor: Mitsuri Kanroji</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nombrepilarsonido" value="2" id="idSonido">
+                    <label for="idSonido">Pilar Sonido: Tengen Uzui</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nombrepilarniebla" value="3" id="idNiebla">
+                    <label for="idNiebla">Pilar Niebla: Muichiro Tokito</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nombrepilarllama" value="4" id="idLlama">
+                    <label for="idLlama">Pilar Llama: Kyojuro Rengoku</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Aspectos de la Caza</legend>
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" min="00:00" max="10:00">
+                </div>
+                <div>
+                    <label for="semana">Semana:</label>
+                    <input type="week" id="semana" name="semana">
+                </div>
+                <div>
+                    <label for="mes">Mes y Año:</label>
+                    <input type="month" id="mes" name="mes">
+                </div>
+                <div>
+                    <label for="rango">Energía:</label>
+                    <input type="range" id="rango" name="rango" min="0" max="100" step="1" value="10">
+                </div>
+                <div>
+                    <label for="cantidad">Demonios Vencidos:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="0" max="100" step="1" value="0">
+                </div>
+                <div>
+                    <label for="armas">Armas:</label>
+                    <select id="armas" name="armas">
+                        <option value="opcion1">Espada Nichirin Normal</option>
+                        <option value="opcion2">Espada Nichirin Carmesí</option>
+                        <option value="opcion3">Técnicas Demoniacas</option>
+                    </select>
+                    <label for="colorArmas">Color:</label>
+                    <input type="color" id="colorArmas" name="color">
+                </div>
+                <div>
+                    <label for="archivo">Cargue su Informe de Caza:</label>
+                    <input type="file" id="archivo" name="archivo">
+                </div>
+            </fieldset>
+            <div>
+                <label for="botonImagen"></label>
+                <input type="image" id="botonImagen" src="images/foto1.jpg" alt="Botón de Imagen" width="50"
+                    height="50">
+            </div>
+            <div>
+                <!--Este elemento lo pongo por aquí pero no se ve, pero al enviar el formulario proporciona al servidor información-->
+                <input type="hidden" name="campoOculto" value="Valor Oculto">
+            </div>
+        </form>
+    </main>
+    <footer>
+		<address>
+			2023-2024 Todos los derechos reservados. Fecha de actualización 2023-12-17
+			<details>
+				<summary>Víctor García Gordón</summary>
+				<div>
+					DAW1 23-24 LMSGI
+					<p>
+						<time datetime="2023-12-17">
+						</time>
+					</p>
+				</div>
+			</details>
+		</address>
+	</footer>
+</body>
+</html>

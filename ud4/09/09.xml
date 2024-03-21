@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE textos SYSTEM "09.dtd"> Con el DTD externo no me cogia bien la entidad obra-->
+<!DOCTYPE textos [
+    <!ELEMENT textos (texto)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ENTITY escritor "Miguel de Cervantes">
+    <!ENTITY obra "El Quijote">
+    <!ENTITY fecha "29/09/1547">
+]>
+<textos>
+     <texto>
+          &obra; fue escrito por &escritor; nació el &fecha;
+     </texto>
+</textos>

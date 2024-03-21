@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="manual">
+        <xs:complexType>
+            <xs:sequence>     
+                <xs:element name="servicio" type="xs:string"></xs:element>
+                <xs:element name="descripcion" type="xs:string"></xs:element>
+                <xs:element name="version"></xs:element>
+                <xs:element name="fecha_actualizacion" type="xs:date"></xs:element>
+                <xs:element name="requisitos_del_sistema">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="sistema_operativo"></xs:element>
+                            <xs:element name="memoria_ram"></xs:element>
+                            <xs:element name="espacio_en_disco"></xs:element>
+                            <xs:element name="puertos_disponibles"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="otros_datos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="url"></xs:element>
+                            <xs:element name="url"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pasos_de_instalacion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="paso">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comando"></xs:element>
+                                        <xs:element name="descripcion2"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="paso">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comando"></xs:element>
+                                        <xs:element name="descripcion2"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="paso">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="comando"></xs:element>
+                                        <xs:element name="descripcion2"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="codigo"></xs:attribute>
+        </xs:complexType>    
+    </xs:element>
+</xs:schema>

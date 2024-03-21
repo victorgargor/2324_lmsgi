@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 5 Xpath Víctor García Gordón</title>
+    <link rel="stylesheet" href="../estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Unidad 5. Xpath</h1>
+        <h2>Hoja 3. Ejercicio 3</h2>
+    </header>
+    <main>
+        <nav>
+            <ol>
+                <li><a href="/ud5/02/02.dtd">DTD</a></li>
+                <li><a href="/ud5/02/02.xml">XML</a></li>
+                <li><a href="/ud5/02/02.xsd">XML Schema</a></li>
+            </ol>      
+        </nav>
+        <div>Dado los siguientes datos  XPath online real-time tester, evaluator and generator for 
+            XML & HTML (xpather.com)  se pide realizar las siguientes consultas en:
+        </div>
+        <div>
+            <ol>
+                <li>Los elementos de cada coche.
+                    <code>/garaje/coches/coche/*</code>
+                    <div><img src="/ud5/02/images/01.png" alt="resultado1"></div>
+                </li>
+                <li>Los elementos de cada reparación.
+                    <code>/garaje/reparaciones/reparacion/*</code>
+                    <div><img src="/ud5/02/images/01.png" alt="resultado2"></div>
+                </li>
+                <li>El contenido de la matrícula de los coches.
+                    <code>/garaje/coches/coche/matricula/text()</code>
+                    <div><img src="/ud5/02/images/01.png" alt="resultado3"></div>
+                </li>
+                <li>Todos los nodos (elementos y contenido) de los coches de la marca Renault.
+                    <code>/garaje/coches/coche[marca='Renault']/*</code>
+                    <div><img src="/ud5/02/images/04.png" alt="resultado4"></div>
+                </li>
+                <li>Todos los nodos de los coches de más de 200000 km.
+                    <code>/garaje/coches/coche[km > 200000]/*</code>
+                    <div><img src="/ud5/02/images/05.png" alt="resultado5"></div>
+                </li>
+                <li>El contenido del color del coche de matrícula 1234C.
+                    <code>/garaje/coches/coche[matricula='1234C']/color/text()</code>
+                    <div><img src="/ud5/02/images/06.png" alt="resultado6"></div>
+                </li>
+                <li>El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B.
+                    <code>/garaje/reparaciones/reparacion[matricula='4444B']/descripcion/text()</code>
+                    <div><img src="/ud5/02/images/07.png" alt="resultado7"></div>
+                </li>
+                <li>El contenido de la descripción de la reparación de código J0005.
+                    <code>/garaje/reparaciones/reparacion[@codigo='J0005']/descripcion/text()</code>
+                    <div><img src="/ud5/02/images/08.png" alt="resultado8"></div>
+                </li>
+                <li>Suma de las horas invertidas reparando coches.
+                    <code>sum(/garaje/reparaciones/reparacion/horas)</code>
+                    <div><img src="/ud5/02/images/09.png" alt="resultado9"></div>
+                </li>
+                <li>Número de coches en el documento.
+                    <code>count(/garaje/coches/coche)</code>
+                    <div><img src="/ud5/02/images/10.png" alt="resultado10"></div>
+                </li>
+                <li>Selecciona todos los elementos del primer coche.
+                    <code>/garaje/coches/coche[1]/*</code>
+                    <div><img src="/ud5/02/images/11.png" alt="resultado11"></div>
+                </li>
+                <li>Selecciona todos los elementos de la última reparación.
+                    <code>/garaje/reparaciones/reparacion[last()]/*</code>
+                    <div><img src="/ud5/02/images/12.png" alt="resultado12"></div>
+                </li>
+                <li>Selecciona todos los elementos del coche de la marca Seat con color Rojo.
+                    <code>/garaje/coches/coche[marca='Seat' and color='Rojo']/*</code>
+                    <div><img src="/ud5/02/images/13.png" alt="resultado13"></div>
+                </li>
+                <li>Propietario del coche modelo Polo 1.2 Advance.
+                    <code>/garaje/coches/coche[modelo='Polo 1.2 Advance']/propietario/text()</code>
+                    <div><img src="/ud5/02/images/14.png" alt="resultado14"></div>
+                </li>
+                <li>Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06.
+                    <code>/garaje/reparaciones/reparacion[fecha_entrada='2013/06/06']/descripcion/text()</code>
+                    <div><img src="/ud5/02/images/15.png" alt="resultado15"></div>
+                </li>
+                <li>Seleccionar los coches rojos y grises.
+                    <code>/garaje/coches/coche[color='Rojo' or color='Gris']/*</code>
+                    <div><img src="/ud5/02/images/16.png" alt="resultado16"></div>
+                </li>
+                <li>Número de coches que entraron a reparar el 2013/06/03.
+                    <code>count(/garaje/reparaciones/reparacion[fecha_entrada='2013/06/03'])</code>
+                    <div><img src="/ud5/02/images/17.png" alt="resultado17"></div>
+                </li>
+                <li>Contenido del modelo del propietario P01.
+                    <code>/garaje/coches/coche[propietario='P01']/modelo/text()</code>
+                    <div><img src="/ud5/02/images/18.png" alt="resultado18"></div>
+                </li>
+                <li>Código de la reparación con fecha de entrada 2013/06/03.
+                    <code>/garaje/reparaciones/reparacion[fecha_entrada='2013/06/03']/@codigo</code>
+                    <div><img src="/ud5/02/images/19.png" alt="resultado19"></div>
+                </li>
+                <li>Suma de las horas de reparación del coche de matrícula 4444B.
+                    <code>sum(/garaje/reparaciones/reparacion[matricula='4444B']/horas)</code>
+                    <div><img src="/ud5/02/images/20.png" alt="resultado20"></div>
+                </li>
+                <li>Matrícula de los coches marca  Ford y Volkswagen.
+                    <code>/garaje/coches/coche[marca='Ford' or marca='Volkswagen']/matricula/text()</code>
+                    <div><img src="/ud5/02/images/21.png" alt="resultado21"></div>
+                </li>              
+            </ol>
+        </div>
+    </main>
+</body>
+</html>

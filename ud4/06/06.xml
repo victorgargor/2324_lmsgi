@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ejemplos SYSTEM "06.dtd">
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+<ejemplos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="06.xsd">
+     <ejemplo>
+          <titulo>Java</titulo>
+          <contenido>
+          <![CDATA[ 
+            public class HolaMundo {
+                public static void main(String[] args) {
+                System.out.println("Hola Mundo");
+                }        
+          }    
+          ]]>
+          </contenido>
+     </ejemplo>
+     <ejemplo>
+          <titulo>HTML</titulo>
+          <contenido>
+          <![CDATA[ 
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Mi primer WEB</title>
+            </head>
+            <body>
+              <div id="una capa">
+                <h1>Hola mundo!</h1>
+                <p>Este es un ejemplo del uso de HTML para crear un documento web que nuestro navegador es capaz de interpretar.</p>
+              </div>
+            </body>  
+        </html>  
+          ]]>
+          </contenido>
+     </ejemplo>
+</ejemplos>

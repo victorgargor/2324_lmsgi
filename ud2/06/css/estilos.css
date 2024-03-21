@@ -1,0 +1,104 @@
+:root{
+    --color1:#f9d423;
+    --color2:#ede574;
+    --color3:#e1f5c4;
+    --color4:#add6bc;
+    --color5:#79b7b4;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 20vh;
+  background-color: var(--color5);
+  text-align: center;
+}
+h1{
+  color:var(--color1);
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 2px;
+  border-style: none solid solid none;
+  border-color: var(--color1);
+  margin-top: 25px;
+  margin-right: 650px;
+  margin-left: 650px;
+}
+h1::first-letter{
+  font-size: 2.5em;
+  color: var(--color2);
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main div {
+  height: 240px;
+  width: 240px;
+  margin-bottom: 10px;
+  border: black solid 10px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin: 20px;
+  display: inline-block;
+}
+main div:nth-child(1) {
+  background-image: url("../images/punto.png");
+  background-position: top left;
+  background-color: var(--color1);
+}
+main div:nth-child(2) {
+  background-image: url("../images/punto.png"), url("../images/punto.png");
+  background-position: top left, bottom right;
+  background-color: var(--color2);
+}
+main div:nth-child(3) {
+  background-image: url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png");
+  background-position: top left, bottom right, center;
+  background-color: var(--color3);
+}
+main div:nth-child(4) {
+  background-image: url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png"), url("../images/punto.png");
+  background-position: top left, top right, bottom left, bottom right;
+  background-color: var(--color4);
+}
+main div:nth-child(5) {
+  background-image: url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png");
+  background-position: top left, top right, bottom left, bottom right, center;
+  background-color: var(--color5);
+}
+main div:nth-child(6) {
+  background-image: url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png"), url("../images/punto.png"),
+    url("../images/punto.png"), url("../images/punto.png");
+  background-position: top left, top right, bottom left, bottom right,
+    center right, center left;
+    background-color: var(--color1);
+}
+footer {
+  min-height: 10vh;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  background-color: var(--color4);
+  color: var(--color3);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+footer div{
+  font-weight: bold;
+  flex-grow: 1;
+}
+footer address{
+  flex-grow: 2;   
+}
+footer address em{
+  text-decoration:underline;
+}
+

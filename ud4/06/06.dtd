@@ -1,0 +1,6 @@
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ELEMENT ejemplos (ejemplo+)>
+<!ELEMENT ejemplo (titulo+,contenido+)>
+<!ATTLIST ejemplos xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST ejemplos xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

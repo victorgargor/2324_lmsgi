@@ -1,0 +1,11 @@
+<!ELEMENT destinatario (#PCDATA)>
+<!ELEMENT remitente (#PCDATA)>
+<!ELEMENT fecha_mensaje (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT mensaje (#PCDATA)>
+<!ELEMENT nombre_fichero (#PCDATA)>
+<!ELEMENT tipo_fichero (#PCDATA)>
+<!ELEMENT mail (remitente,destinatario+,fecha_mensaje,mensaje,asunto?,fichero*)>
+<!ELEMENT fichero (nombre_fichero,tipo_fichero)>
+<!ATTLIST mail xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST mail xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

@@ -1,0 +1,106 @@
+/*RESETEAR ESTILOS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*COLORES*/
+:root{
+    --color1: #666666; /*fondo de la web */
+    --color2: #FF5733;
+    --color3: #75FF33;
+    --color4: #33DBFF;
+    --color5: #BD33FF;
+}
+
+/*FUENTES*/
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/*HEADER DE LA WEB*/
+.sticky{
+    background-image: url(../images/robot.png);
+    color: white;
+    position: sticky;
+}
+
+body{
+    background-color: #666666 ;
+    margin: 15px;
+}
+
+section{
+    background-color: white;
+    width: 60%;
+    float: inline-start;
+}
+
+.relative1{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 6px;
+    position: relative;
+}
+
+/*ASIDE*/
+aside{
+    background-color: white;
+    width: 35%;
+    float: inline-end;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 6px;  
+}
+
+
+img{
+    width: 165px;
+}
+
+input{
+    color: white;
+    background-color: #BD33FF;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 6px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.relative2{
+    border-color: #BD33FF;
+    border-width: 3px;
+    color: #BD33FF;
+    border-style: solid;
+    padding: 6px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    text-align: center;
+    position: relative;
+}
+
+.relative3{
+    border-color: #FF5733;
+    border-width: 3px;
+    border-style: solid;
+    padding: 6px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    text-align: center;
+    position: relative;
+}
+
+.relative3 h2{
+    color:#FF5733;
+}

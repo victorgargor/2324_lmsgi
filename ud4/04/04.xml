@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "04.dtd">
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">
+    <datos_personales>
+        <nombre>Victor</nombre>
+        <apellidos>García Gordón</apellidos>
+        <nacimiento>2005</nacimiento>
+        <residencia>
+            <ciudad>Benavente</ciudad>
+            <pais>España</pais>
+        </residencia>
+    </datos_personales>
+    <contacto>
+        <telefono>660929686</telefono>
+        <correo>cogorderosvictorino@gmail.com</correo>
+        <descripcion></descripcion>
+        <competencias>
+            <competencia nivel="bajo">
+                <nombre_competencia>Mecanografía</nombre_competencia>
+            </competencia>
+            <competencia nivel="medio">
+                <nombre_competencia>Audacity</nombre_competencia>
+            </competencia>
+        </competencias>
+        <formaciones>
+            <formacion anyo="2021">
+                <titulacion>Educación Secundaria Obligatoria(ESO)</titulacion>
+                <centro>I.E.S. Leon Felipe(Benavente)</centro>
+            </formacion>
+            <formacion anyo="2023">
+                <titulacion>Bachillerato</titulacion>
+                <centro>I.E.S. León Felipe(Benavente)</centro>
+            </formacion>
+        </formaciones>
+        <experiencias>
+            <experiencia>
+                <puesto>Youtuber</puesto>
+                <empresa>Twitch Spain</empresa>
+                <anyo_inicio>2014</anyo_inicio>
+                <anyo_fin>2022</anyo_fin>
+            </experiencia>
+        </experiencias>
+    </contacto>
+</curriculum>
