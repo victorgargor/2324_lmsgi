@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 JSON Víctor García Gordón</title>
+</head>
+<body>
+    <header>
+        <h1>Lenguajes de Programación</h1>
+    </header>
+    <main>
+        <p id="item"></p>
+        <p id="item2"></p>
+        <p id="item3"></p>
+        <p id="item4"></p>
+        <script>
+            let cadenaJson ='[{"nombre":"Javascript","anyo_de_creación":1995,"autores":["Brendan Eich"],"compilado":false},{"nombre":"Java","anyo_de_creación":1995,"autores":["James Gosling"],"compilado":true},{"nombre":"Python","anyo_de_creación":1991,"autores":["Guido van Rossum"],"compilado":false},{"nombre":"C++","anyo_de_creación":1985,"autores":["Bjarne Stroustrup"],"compilado":true}]';
+            let objetoJson = JSON.parse(cadenaJson);
+            document.getElementById("item").innerHTML=objetoJson[0].nombre + " " + objetoJson[0].anyo_de_creación;
+            document.getElementById("item2").innerHTML=objetoJson[1].nombre + " " + objetoJson[1].anyo_de_creación;
+            document.getElementById("item3").innerHTML=objetoJson[2].nombre + " " + objetoJson[2].anyo_de_creación;
+            document.getElementById("item4").innerHTML=objetoJson[3].nombre + " " + objetoJson[3].anyo_de_creación;
+        </script>
+    </main>   
+</body>
+</html>

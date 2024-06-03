@@ -1,0 +1,22 @@
+{
+  "usuario1": {
+    "color_primer_plano": "#000000",
+    "color_fondo": "#FFFFFF",
+    "tipo_de_fuente": "Arial",
+    "tamano_de_la_fuente": 12,
+    "negrita": false,
+    "cursiva": false,
+    "subrayado": false,
+    "idioma": "es"
+  },
+  "usuario2": {
+    "color_primer_plano": "#FFFFFF",
+    "color_fondo": "#000000",
+    "tipo_de_fuente": "Verdana",
+    "tamano_de_la_fuente": 14,
+    "negrita": true,
+    "cursiva": true,
+    "subrayado": true,
+    "idioma": "en"
+  }
+}

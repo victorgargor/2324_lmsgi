@@ -1,0 +1,30 @@
+{
+  "Title": "Saw X",
+  "Year": "2023",
+  "Rated": "R",
+  "Released": "29 Sep 2023",
+  "Runtime": "118 min",
+  "Genre": "Horror, Mystery, Thriller",
+  "Director": "Kevin Greutert",
+  "Writer": "Pete Goldfinger, Josh Stolberg",
+  "Actors": "Tobin Bell, Shawnee Smith, Synnøve Macody Lund",
+  "Plot": "A sick and desperate John travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer only to discover the entire operation is a scam to defraud the most vulnerable.",
+  "Language": "English, Spanish",
+  "Country": "United States, Mexico, Canada",
+  "Awards": "14 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMmJhYjBkMzgtZGIwMC00YTAzLWE4NTQtYzVkNDVmYjIzODI0XkEyXkFqcGdeQXVyODQxMTI4MjM@._V1_SX300.jpg",
+  "Ratings": [
+    { "Source": "Internet Movie Database", "Value": "6.6/10" },
+    { "Source": "Rotten Tomatoes", "Value": "80%" }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.6",
+  "imdbVotes": "73,015",
+  "imdbID": "tt21807222",
+  "Type": "movie",
+  "DVD": "20 Oct 2023",
+  "BoxOffice": "$53,607,898",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+}

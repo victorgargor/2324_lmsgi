@@ -15,7 +15,7 @@ body{
     background-attachment: fixed;
 }
 
-header h1{
+header h1, h2{
     background-color: orange;
     color: red;
     font-variant: small-caps;

@@ -2,6 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+    text-align: center;
+    color: burlywood;
+    font-style: italic;
+}
+
 form{
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
