@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Javascript",
+        "anyo_de_creación": 1995,
+        "autores": [
+            "Brendan Eich"
+        ],
+        "compilado": false
+    },
+    {
+        "nombre": "Java",
+        "anyo_de_creación": 1995,
+        "autores": [
+            "James Gosling"
+        ],
+        "compilado": true
+    },
+    {
+        "nombre": "Python",
+        "anyo_de_creación": 1991,
+        "autores": [
+            "Guido van Rossum"
+        ],
+        "compilado": false
+    },
+    {
+        "nombre": "C++",
+        "anyo_de_creación": 1985,
+        "autores": [
+            "Bjarne Stroustrup"
+        ],
+        "compilado": true
+    }
+]

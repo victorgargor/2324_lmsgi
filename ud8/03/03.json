@@ -1,0 +1,41 @@
+{
+    "nombre_del_equipo": "Los Ángeles Lakers",
+    "color_de_la_equipacion": "Púrpura y Oro",
+    "nombre_del_estadio": "Staples Center",
+    "nombre_del_entrenador": "Darvin Ham",
+    "plantilla_historica": false,
+    "pagina_web": "www.lakers.com",
+    "jugadores": {
+      "base": [
+        {
+          "nombre": "D'Angelo Russell",
+          "dorsal": "1"
+        },
+        {
+          "nombre": "Skylar Mays",
+          "dorsal": "4"
+        }
+      ],
+      "alero": [
+        {
+          "nombre": "LeBron James",
+          "dorsal": "23"
+        },
+        {
+          "nombre": "Cam Reddish",
+          "dorsal": "5"
+        }
+      ],
+      "pivots": [
+        {
+          "nombre": "Anthony Davis",
+          "dorsal": "3"
+        },
+        {
+          "nombre": "Jaxson Hayes",
+          "dorsal": "11"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,12 @@
+.cooking{
+    color: green;
+}
+.children{
+    color: blue;
+}
+.web{
+    color: red;
+}
+table, th, td{
+    border: 1px solid green;
+}

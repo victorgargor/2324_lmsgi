@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Unidad 7&period; Xquery</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="unidad-7-xquery">Unidad 7. Xquery</h1>
+<h2 id="ejercicio-1">Ejercicio 1</h2>
+<ol>
+<li><strong>Lista el título de los libros ordenados por título.</strong><pre><code class="language-xq"><span class="hljs-comment">(: Consulta1 Lista libros:)</span>
+<span class="hljs-keyword">for</span> <span class="hljs-variable">$x</span> <span class="hljs-keyword">in</span><span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;books&#x27;</span>)/bookstore/book
+<span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-variable">$x</span>/title
+<span class="hljs-keyword">return</span> <span class="hljs-variable">$x</span>/title/<span class="hljs-type">text</span>()
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado01.txt">Listado de libros</a></p>
+</blockquote>
+</li>
+<li><strong>Lista el título de los libros ordenados por título cuyo precio es superior a 30.</strong><pre><code class="language-xq"><span class="hljs-comment">(: Consulta2 Lista libros precio superior a 30:)</span>
+ <span class="hljs-keyword">for</span> <span class="hljs-variable">$x</span> <span class="hljs-keyword">in</span><span class="hljs-built_in"> doc</span>(<span class="hljs-string">&#x27;books&#x27;</span>)/bookstore/book
+ <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-variable">$x</span>/title
+ <span class="hljs-keyword">where</span> <span class="hljs-variable">$x</span>/price&gt;<span class="hljs-number">30</span>
+ <span class="hljs-keyword">return</span> <span class="hljs-variable">$x</span>/title/<span class="hljs-type">text</span>()
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado02.txt">Listado de libros &gt; 30</a></p>
+</blockquote>
+</li>
+<li><strong>Crea una página web (03.html) cuyo título de la web “UD7-01.03 Listado de libros. Nombre y
+apellidos” y que contenga una lista con viñetas con los títulos de los libros.</strong><pre><code class="language-html">(: Consulta3:)
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Lista de alumnos<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+            {
+                for $x in doc(&#x27;books&#x27;)/bookstore/book
+                order by $x/title
+                where $x/price&gt;30
+                return <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{$x/title/text()}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            }
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado03.html">Página HTML</a></p>
+</blockquote>
+</li>
+<li><strong>Crea un documento XML(04.html), donde el elemento raíz es libros. Y si la categoría del libro es
+children el título aparece entre las etiquetas <children> y en caso contrario aparece con la etiqueta
+<adult>.</strong><pre><code class="language-xml">(: Consulta4:)
+<span class="hljs-tag">&lt;<span class="hljs-name">books</span>&gt;</span>
+    {
+        for $x in doc(&#x27;books&#x27;)//book
+        return if ($x/@category=&quot;children&quot;)
+        then <span class="hljs-tag">&lt;<span class="hljs-name">child</span>&gt;</span>{$x/title/text()}<span class="hljs-tag">&lt;/<span class="hljs-name">child</span>&gt;</span>
+        else <span class="hljs-tag">&lt;<span class="hljs-name">adult</span>&gt;</span>{$x/title/text()}<span class="hljs-tag">&lt;/<span class="hljs-name">adult</span>&gt;</span>
+    }
+<span class="hljs-tag">&lt;/<span class="hljs-name">books</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado04.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Crea una página web (05.html), que contenga todos los libros con su categoría, en la lista aparece
+distintos colores el título en función de la categoría.</strong><pre><code class="language-html">(: Consulta 5 :)
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ud7-1 VÍCTOR GARCÍA GORDÓN<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;css/estilos.css&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Bookstore<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Título<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Categoría<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+        {
+            for $x in doc(&#x27;books&#x27;)/bookstore/book
+            return <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{data($x/title)}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{data($x/@category)}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        }
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    {
+        for $x in doc(&#x27;books&#x27;)/bookstore/book
+        return
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;{data($x/@category)}&quot;</span>&gt;</span>{data($x/title)}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>    
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado05.html">Página HTML</a></p>
+</blockquote>
+</li>
+<li>**Lista de libros ordenados por categoría de forma descendiente, y como segundo criterio por título
+de forma descendiente. Mostrando el título con suprecio precio, donde el precio es mayor que 30 $. **<pre><code class="language-xml">(: Consulta 6 :)
+<span class="hljs-tag">&lt;<span class="hljs-name">books</span>&gt;</span>
+{
+for $x at $y in doc(&#x27;books&#x27;)/bookstore/book
+return  <span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>{$x}<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+}
+<span class="hljs-tag">&lt;/<span class="hljs-name">books</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado06.xml">Documento XML</a></p>
+</blockquote>
+</li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
