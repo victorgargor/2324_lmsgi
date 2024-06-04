@@ -1,4 +1,4 @@
-<book category="web">
+<libros><book category="web">
     <title lang="en">XQuery Kick Start</title>
     <author>James McGovern</author>
     <author>Per Bothner</author>
@@ -7,10 +7,9 @@
     <author>Vaidyanathan Nagarajan</author>
     <year>2003</year>
     <price>49.99</price>
-  </book>
-<book category="web" cover="paperback">
+  </book><book category="web" cover="paperback">
     <title lang="en">Learning XML</title>
     <author>Erik T. Ray</author>
     <year>2003</year>
     <price>39.95</price>
-  </book>
+  </book></libros>

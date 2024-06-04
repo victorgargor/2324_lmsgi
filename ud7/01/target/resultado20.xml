@@ -1,4 +1,1 @@
-<libros><titulo><title lang="en">Everyday Italian</title></titulo><numautores>1</numautores></libros>
-<libros><titulo><title lang="en">Harry Potter</title></titulo><numautores>1</numautores></libros>
-<libros><titulo><title lang="en">XQuery Kick Start</title></titulo><numautores>5</numautores></libros>
-<libros><titulo><title lang="en">Learning XML</title></titulo><numautores>1</numautores></libros>
+<libros><titulo><title lang="en">Everyday Italian</title></titulo><numautores>1</numautores><titulo><title lang="en">Harry Potter</title></titulo><numautores>1</numautores><titulo><title lang="en">XQuery Kick Start</title></titulo><numautores>5</numautores><titulo><title lang="en">Learning XML</title></titulo><numautores>1</numautores></libros>

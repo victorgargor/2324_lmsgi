@@ -1,0 +1,60 @@
+:root{
+    --color1:#4F86D9;
+    --color2:#95B6E9 ;
+    --color3:#345A8E ;
+    --color4:#F00;
+}
+
+h1{
+    color: var(--color1);
+    text-align: center;
+    margin: 1%;
+}
+
+caption{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 1%;
+}
+
+body{
+    margin: 2% auto;
+    width: 1024px;
+}
+
+main{
+    width: 1024px;
+    background-color: var(--color1);
+    padding: 5px;
+}
+
+table{
+    border: 1px solid var(--color1);
+    background-color: white;
+    width: 1024px;
+}
+
+td{
+    border-bottom: 1px solid var(--color2);
+}
+
+td, tr{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+    color: white;
+    background-color: var(--color2);
+    padding: 1px;
+}
+
+.maxima{
+    color: var(--color3);
+}
+
+.minima{
+    color: var(--color4);
+}
