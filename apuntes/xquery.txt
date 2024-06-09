@@ -1,0 +1,83 @@
+Cláusulas
+
+ Hemos visto el modo de crear  sentencias FLWOR, vamos ahora a estudiar aisladamente
+cada una de las cláusulas  que pueden formar estas sentencias.
+
+  FOR: asocia una o más variables con cada  nodo que encuentre en la colección de
+datos. Si en la consulta aparece más de  una cláusula FOR (o más de una variable en una
+cláusula FOR), el resultado es  el producto cartesiano de dichas variables.
+  LET: vincula las variables al resultado  de una expresión. Si esta cláusula aparece en una
+sentencia en la que ya hay al  menos una cláusula FOR, los valores de la variable
+vinculada por la cláusula  LET se añaden a cada una de las tuplas generadas por la
+cláusula FOR.
+  WHERE: filtra tuplas producidas por las  cláusulas FOR y LET, quedando solo aquellas
+que cumplen con la condición.
+  ORDER BY: ordena las tuplas generadas por  FOR y LET después de que han sido
+filtradas por la cláusula WHERE. Por defecto  el orden es ascendiente, pero se puede usar
+el modificador descending para cambiar el sentido del orden.
+  RETURN: construye el resultado de la expresión FLWOR para una tupla dada.
+Funciones
+
+Ahora que conocemos las cláusulas que sustentan el lenguaje XQuery, vamos a ocuparnos
+de las funciones que soporta.
+
+ Estas son funciones matemáticas, de cadenas, para el tratamiento de expresiones
+regulares, comparaciones de fechas y horas, manipulación de nodos XML, manipulación de
+secuencias, comprobación y conversión de tipos y lógica booleana. Además permite definir
+funciones propias y funciones dependientes del entorno de ejecución del motor XQuery.
+Las funciones más importantes se muestran a continuación:
+
+Funciones numéricas
+
+floor(), que devuelve el valor numérico inferior más próximo al dado.
+ceiling(), que devuelve el valor numérico superior más próximo al dado
+round(), que redondea el valor dado al más próximo
+count(), determina el número de ítems en una colección
+min() o max(), devuelven respectivamente el mínimo y el máximo de los valores de los
+nodos dados
+avg(), calcula el valor medio de los valores dados
+sum(), calcula la suma total de una cantidad de ítems dados.
+Funciones de cadenas de texto
+
+concat(), devuelve una cadena construida por la unión de dos cadenas dadas
+string-length(), devuelve la cantidad de caracteres que forman una cadena
+startswith(), ends-with(), determinan si una cadena dada comienza o termina,
+respectivamente, con otra cadena dada
+upper-case(), lower-case(), devuelve la cadena dada en mayúsculas o minúsculas
+respectivamente.
+Funciones de uso general
+
+empty(), devuelve “true” cuando la secuencia dada no contiene ningún elemento
+exits(), devuelve “true” cuando una secuencia contiene, al menos, un elemento
+distinct-values(), extrae los valores de una secuencia de nodos y crea una nueva
+secuencia con valores únicos, eliminando los nodos duplicados.
+Cuantificadores existenciales:
+
+some, every, permiten definir consultas que devuelven algún, o todos los elementos,
+que verifiquen la condición dada.
+Operadores
+
+mos ahora algunos de los operadores más importantes agrupados según su funcionalidad:
+
+Comparación de valores: Comparan dos valores escalares y produce un error si alguno
+de los operandos es una secuencia de longitud mayor de 1. Estos operadores son:eq,
+igual.ne, no igual.lt, menor que.le, menor o igual que.gt, mayor que.ge, mayor o igual
+que.
+Comparación generales: Permiten comparar operandos que sean secuencias.=, igual.!=,
+distinto.>, mayor que.>=, mayor o igual que.<, menor que.<=, menor o igual que.
+Comparación de nodos: Comparan la identidad de dos nodos.is, devuelve true si las dos
+variables que actúan de operandos están ligadas al mismo nodo.is not, devuelve true si
+las dos variables no están ligadas al mismo nodo.
+Comparación de órdenes de los nodos: <<, compara la posición de dos nodos.
+Devuelve “true“ si el nodo ligado al primer operando ocurre primero en el orden del
+documento que el nodo ligado al segundo.
+Lógicos: and y or Se emplean para combinar condiciones lógicas dentro de un
+predicado.
+Secuencias de nodos: Devuelven secuencias de nodos en el orden del documento y
+eliminan duplicados de las secuencias resultado.Unión, devuelve una secuencia que
+contiene todos los nodos que aparecen en alguno de los dos operandos que
+recibe.Intersect, devuelve una secuencia que contiene todos los nodos que aparecen en
+los dos operandos que recibe.Except, devuelve una secuencia que contiene todos los
+nodos que aparecen en el primer operando que recibe y que no aparecen en el segundo.
+Aritméticos: +, -, *, div y mod, devuelven respectivamente la suma, diferencia,
+producto, cociente y resto de operar dos números dados.

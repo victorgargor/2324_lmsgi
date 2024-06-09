@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Unidad 7&period; Xquery</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="unidad-7-xquery">Unidad 7. Xquery</h1>
+<h2 id="ejercicio-3">Ejercicio 3</h2>
+<ol>
+<li><strong>Mostrar los nombres de los profesores eliminando los repetidos y acompañar cada nombre con todas las salas en la que da clase, ordénalos por nombre.</strong><pre><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">profesores</span>&gt;</span>
+ {
+ for $x in distinct-values(/bailes/baile/profesor)
+ let $y := distinct-values(/bailes/baile[profesor=$x]/sala)
+ order by $x
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">profesor</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">nombre</span>&gt;</span>{ $x }<span class="hljs-tag">&lt;/<span class="hljs-name">nombre</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">salas</span>&gt;</span>{ for $z in $y return <span class="hljs-tag">&lt;<span class="hljs-name">sala</span>&gt;</span>{ $z }<span class="hljs-tag">&lt;/<span class="hljs-name">sala</span>&gt;</span> }<span class="hljs-tag">&lt;/<span class="hljs-name">salas</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">profesor</span>&gt;</span> 
+ }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">profesores</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado01.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar la media de los precios de todos los bailes.</strong><pre><code class="language-xq"> <span class="hljs-keyword">let</span> <span class="hljs-variable">$precios</span> := /bailes/baile/precio
+ <span class="hljs-keyword">return</span><span class="hljs-built_in"> avg</span>(<span class="hljs-variable">$precios</span>)
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado02.txt">Fichero txt</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar la suma de los precios de los bailes de la sala 1.</strong><pre><code class="language-xq"> <span class="hljs-keyword">let</span> <span class="hljs-variable">$precios</span> := /bailes/baile[sala=<span class="hljs-string">&#x27;1&#x27;</span>]/precio
+ <span class="hljs-keyword">return</span><span class="hljs-built_in"> sum</span>(<span class="hljs-variable">$precios</span>)
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado03.txt">Fichero txt</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar cuántas plazas en total oferta el profesor &quot;Jesus Lozano&quot;.</strong><pre><code class="language-xq"> <span class="hljs-keyword">let</span> <span class="hljs-variable">$plazas</span> := /bailes/baile[profesor=<span class="hljs-string">&#x27;Jesus Lozano&#x27;</span>]/plazas
+ <span class="hljs-keyword">return</span><span class="hljs-built_in"> sum</span>(<span class="hljs-variable">$plazas</span>)
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado04.txt">Fichero txt</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar el dinero que ganaría la profesora &quot;Laura Mendiola&quot; si se completaran todas las plazas de su baile, sabiendo que sólo tiene un baile.</strong><pre><code class="language-xq"> <span class="hljs-keyword">let</span> <span class="hljs-variable">$baile</span> := /bailes/baile[profesor=<span class="hljs-string">&#x27;Laura Mendiola&#x27;</span>]
+ <span class="hljs-keyword">return</span> <span class="hljs-variable">$baile</span>/precio * <span class="hljs-variable">$baile</span>/plazas
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado05.txt">Fichero txt</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar el dinero que ganaría el profesor &quot;Jesus Lozano&quot; si se completaran todas las plazas de su baile, pero mostrando el beneficio de cada baile por separado.</strong><pre><code class="language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ganancias</span>&gt;</span>
+ {
+ for $x in /bailes/baile[profesor=&#x27;Jesus Lozano&#x27;]
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+     { $x/nombre }
+     <span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>{ $x/precio * $x/plazas }<span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span>
+ }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">ganancias</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado06.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar el dinero que ganaría la profesora &quot;Laura&quot; (no conocemos su apellido) si se completaran todas las plazas de su baile.</strong><pre><code class="language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">ganancias</span>&gt;</span>
+ {
+ for $x in /bailes/baile[contains(profesor, &#x27;Laura&#x27;)]
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+     { $x/nombre }
+     <span class="hljs-tag">&lt;<span class="hljs-name">ganancia</span>&gt;</span>{ $x/precio * $x/plazas }<span class="hljs-tag">&lt;/<span class="hljs-name">ganancia</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span>
+ }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">ganancias</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado07.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar el nombre del baile, su precio y el precio con un descuento del 15% para familias numerosas. Ordenar por el nombre del baile</strong><pre><code class="language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">bailes</span>&gt;</span>
+ {
+ for $x in /bailes/baile
+ order by $x/nombre
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+     { $x/nombre }
+     <span class="hljs-tag">&lt;<span class="hljs-name">precio_original</span>&gt;</span>{ $x/precio }<span class="hljs-tag">&lt;/<span class="hljs-name">precio_original</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">precio_descuento</span>&gt;</span>{ $x/precio * 0.85 }<span class="hljs-tag">&lt;/<span class="hljs-name">precio_descuento</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span>  
+ }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">bailes</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado08.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar todos los datos de cada baile excepto la fecha de comienzo y de fin.</strong><pre><code class="language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">bailes</span>&gt;</span>
+ {
+ for $x in /bailes/baile
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">baile</span>&gt;</span>
+     { $x/nombre }
+     { $x/precio }
+     { $x/plazas }
+     { $x/profesor }
+     { $x/sala }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">baile</span>&gt;</span>
+ }
+ <span class="hljs-tag">&lt;/<span class="hljs-name">bailes</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado09.xml">Documento XML</a></p>
+</blockquote>
+</li>
+<li><strong>Mostrar en una tabla de HTML los nombres de los bailes y su profesor, cada uno en una fila.</strong></li>
+</ol>
+<pre><code class="language-html"> let $x := /bailes/baile
+ return 
+ <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">border</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Nombre del Baile<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Profesor<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+         {
+         for $y in $x
+         return
+             <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{ $x/nombre }<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{ $x/profesor }<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+         }
+     <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Resultado <a href="resultado10.html">Página HTML</a></p>
+</blockquote>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
