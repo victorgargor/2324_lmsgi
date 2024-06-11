@@ -1,0 +1,75 @@
+:root {
+    --color1:  #ffd700;
+    --color2: #333; /* Color gris oscuro */
+    --color3: #444; /* Color gris claro */
+}
+
+#inicio{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+#inicio img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    float: left;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+nav{
+    background-color: var(--color2);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    color: white;
+}
+
+table{
+    border: 1px solid var(--color2);
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+tfoot{
+    color: var(--color1);
+}
+
+th, td{
+    border: 1px solid var(--color2);
+    text-align: center;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+main{
+    margin: 100px;
+}
+
+article{
+    background-color: white;
+}
+
+footer{
+    background-color: var(--color1);
+    text-align: center;
+    padding: 30px;
+}
+
+h2, h3{
+    border-bottom: 3px solid var(--color1);
+    color: var(--color3);
+}

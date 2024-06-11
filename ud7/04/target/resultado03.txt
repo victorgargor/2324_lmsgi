@@ -1,0 +1,10 @@
+Bases de Datos OO
+40
+Bases de Datos OR
+320
+Bases de Datos XML
+80
+ProgramaciÃ¯Â¿Â½n Java
+30
+ProgramaciÃ¯Â¿Â½n en PHP
+50

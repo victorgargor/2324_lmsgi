@@ -1,0 +1,354 @@
+<data competicion="La Liga" year="2024" id="89" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="liga.xsd">
+    <equipos>
+        <equipo id="174">
+            <manager>Marcelino García</manager>
+            <nombrecorto>VIL</nombrecorto>
+            <nombre>Villarreal CF</nombre>
+            <apodo>El submarino amarillo</apodo>
+            <yearfundacion>1923</yearfundacion>
+            <estadio>150</estadio>
+            <jugadores>
+                <jugador>
+                    <nombre>Gerard Moreno</nombre>
+                    <nombreCamiseta>G. Moreno</nombreCamiseta>
+                    <numeroCamiseta>7</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1992-04-07</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>180</altura>
+                    <peso>77</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Pau Torres</nombre>
+                    <nombreCamiseta>P. Torres</nombreCamiseta>
+                    <numeroCamiseta>4</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1997-01-16</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>191</altura>
+                    <peso>80</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Moi Gómez</nombre>
+                    <nombreCamiseta>Moi</nombreCamiseta>
+                    <numeroCamiseta>23</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1994-06-23</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>177</altura>
+                    <peso>72</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Manu Trigueros</nombre>
+                    <nombreCamiseta>Trigueros</nombreCamiseta>
+                    <numeroCamiseta>14</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1999-01-22</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>178</altura>
+                    <peso>70</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Raúl Albiol</nombre>
+                    <nombreCamiseta>R. Albiol</nombreCamiseta>
+                    <numeroCamiseta>3</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1985-09-04</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>190</altura>
+                    <peso>82</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Sergio Asenjo</nombre>
+                    <nombreCamiseta>Asenjo</nombreCamiseta>
+                    <numeroCamiseta>1</numeroCamiseta>
+                    <posicion>Portero</posicion>
+                    <fechaNacimiento>1989-06-28</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>188</altura>
+                    <peso>87</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Dani Parejo</nombre>
+                    <nombreCamiseta>Parejo</nombreCamiseta>
+                    <numeroCamiseta>10</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1989-04-16</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>182</altura>
+                    <peso>81</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Francis Coquelin</nombre>
+                    <nombreCamiseta>Coquelin</nombreCamiseta>
+                    <numeroCamiseta>19</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1991-05-13</fechaNacimiento>
+                    <nacionalidad>Francia</nacionalidad>
+                    <altura>178</altura>
+                    <peso>74</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Alberto Moreno</nombre>
+                    <nombreCamiseta>A. Moreno</nombreCamiseta>
+                    <numeroCamiseta>18</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1992-07-05</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>175</altura>
+                    <peso>70</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Samuel Chukwueze</nombre>
+                    <nombreCamiseta>Chukwueze</nombreCamiseta>
+                    <numeroCamiseta>11</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1999-05-22</fechaNacimiento>
+                    <nacionalidad>Albania</nacionalidad>
+                    <altura>176</altura>
+                    <peso>70</peso>
+                </jugador>
+            </jugadores>
+        </equipo>
+        <equipo id="141">
+            <manager>Carlos Carvalhal</manager>
+            <nombrecorto>CEL</nombrecorto>
+            <nombre>Celta de Vigo</nombre>
+            <apodo>Los Celestes</apodo>
+            <yearfundacion>1923</yearfundacion>
+            <estadio>154</estadio>
+            <jugadores>
+                <jugador>
+                    <nombre>Iago Aspas</nombre>
+                    <nombreCamiseta>I. Aspas</nombreCamiseta>
+                    <numeroCamiseta>10</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1987-08-01</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>176</altura>
+                    <peso>67</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Denis Suárez</nombre>
+                    <nombreCamiseta>Denis</nombreCamiseta>
+                    <numeroCamiseta>6</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1994-01-06</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>181</altura>
+                    <peso>72</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Brais Méndez</nombre>
+                    <nombreCamiseta>Brais</nombreCamiseta>
+                    <numeroCamiseta>23</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1997-01-07</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>187</altura>
+                    <peso>74</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Jeison Murillo</nombre>
+                    <nombreCamiseta>Murillo</nombreCamiseta>
+                    <numeroCamiseta>21</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1992-05-27</fechaNacimiento>
+                    <nacionalidad>Rusia</nacionalidad>
+                    <altura>182</altura>
+                    <peso>78</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Néstor Araújo</nombre>
+                    <nombreCamiseta>Araújo</nombreCamiseta>
+                    <numeroCamiseta>4</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1991-08-29</fechaNacimiento>
+                    <nacionalidad>Turquia</nacionalidad>
+                    <altura>188</altura>
+                    <peso>84</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Hugo Mallo</nombre>
+                    <nombreCamiseta>Mallo</nombreCamiseta>
+                    <numeroCamiseta>2</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1991-06-22</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>177</altura>
+                    <peso>74</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Fran Beltrán</nombre>
+                    <nombreCamiseta>Beltrán</nombreCamiseta>
+                    <numeroCamiseta>8</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1999-02-03</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>170</altura>
+                    <peso>66</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Rubén Blanco</nombre>
+                    <nombreCamiseta>Rubén</nombreCamiseta>
+                    <numeroCamiseta>13</numeroCamiseta>
+                    <posicion>Portero</posicion>
+                    <fechaNacimiento>1995-07-25</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>191</altura>
+                    <peso>82</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Joseph Aidoo</nombre>
+                    <nombreCamiseta>Aidoo</nombreCamiseta>
+                    <numeroCamiseta>18</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1995-09-29</fechaNacimiento>
+                    <nacionalidad>Belgica</nacionalidad>
+                    <altura>184</altura>
+                    <peso>81</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Renato Tapia</nombre>
+                    <nombreCamiseta>Tapia</nombreCamiseta>
+                    <numeroCamiseta>14</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1995-07-28</fechaNacimiento>
+                    <nacionalidad>Francia</nacionalidad>
+                    <altura>185</altura>
+                    <peso>77</peso>
+                </jugador>
+            </jugadores>
+        </equipo>
+        <equipo id="143">
+            <manager>Sergio González</manager>
+            <nombrecorto>CAD</nombrecorto>
+            <nombre>Cádiz CF</nombre>
+            <apodo>Los Piratas</apodo>
+            <yearfundacion>1910</yearfundacion>
+            <estadio>156</estadio>
+            <jugadores>
+                <jugador>
+                    <nombre>Álvaro Negredo</nombre>
+                    <nombreCamiseta>Negredo</nombreCamiseta>
+                    <numeroCamiseta>9</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1985-08-20</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>186</altura>
+                    <peso>81</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Salvi Sánchez</nombre>
+                    <nombreCamiseta>Salvi</nombreCamiseta>
+                    <numeroCamiseta>7</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1991-03-30</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>174</altura>
+                    <peso>69</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Jens Jønsson</nombre>
+                    <nombreCamiseta>Jønsson</nombreCamiseta>
+                    <numeroCamiseta>2</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1993-01-10</fechaNacimiento>
+                    <nacionalidad>Belgica</nacionalidad>
+                    <altura>183</altura>
+                    <peso>74</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Isaac Carcelén</nombre>
+                    <nombreCamiseta>Isaac</nombreCamiseta>
+                    <numeroCamiseta>20</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1993-04-23</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>180</altura>
+                    <peso>70</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Juan Cala</nombre>
+                    <nombreCamiseta>Cala</nombreCamiseta>
+                    <numeroCamiseta>16</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1989-11-26</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>187</altura>
+                    <peso>80</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Alfonso Espino</nombre>
+                    <nombreCamiseta>Espino</nombreCamiseta>
+                    <numeroCamiseta>22</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1992-01-05</fechaNacimiento>
+                    <nacionalidad>Rusia</nacionalidad>
+                    <altura>175</altura>
+                    <peso>70</peso>
+                </jugador>
+                <jugador>
+                    <nombre>José Mari</nombre>
+                    <nombreCamiseta>José Mari</nombreCamiseta>
+                    <numeroCamiseta>6</numeroCamiseta>
+                    <posicion>Mediocampista</posicion>
+                    <fechaNacimiento>1987-12-29</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>183</altura>
+                    <peso>77</peso>
+                </jugador>
+                <jugador>
+                    <nombre>David Gil</nombre>
+                    <nombreCamiseta>Gil</nombreCamiseta>
+                    <numeroCamiseta>13</numeroCamiseta>
+                    <posicion>Portero</posicion>
+                    <fechaNacimiento>1994-01-11</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>188</altura>
+                    <peso>82</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Fali Jiménez</nombre>
+                    <nombreCamiseta>Fali</nombreCamiseta>
+                    <numeroCamiseta>3</numeroCamiseta>
+                    <posicion>Defensor</posicion>
+                    <fechaNacimiento>1993-08-12</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>185</altura>
+                    <peso>81</peso>
+                </jugador>
+                <jugador>
+                    <nombre>Iván Alejo</nombre>
+                    <nombreCamiseta>Alejo</nombreCamiseta>
+                    <numeroCamiseta>14</numeroCamiseta>
+                    <posicion>Delantero</posicion>
+                    <fechaNacimiento>1995-02-10</fechaNacimiento>
+                    <nacionalidad>España</nacionalidad>
+                    <altura>185</altura>
+                    <peso>74</peso>
+                </jugador>
+            </jugadores>
+        </equipo>
+    </equipos>
+    <estadios>
+        <estadio id="150">
+            <nombre>Estadio de la cerámica</nombre>
+            <ciudad>Villareal</ciudad>
+            <pais>España</pais>
+            <capacidad>25000</capacidad>
+        </estadio>
+        <estadio id="154">
+            <nombre>Abanca-Balaídos</nombre>
+            <ciudad>Vigo</ciudad>
+            <pais>España</pais>
+            <capacidad>29000</capacidad>
+        </estadio>
+        <estadio id="156">
+            <nombre>Nuevo Mirandilla</nombre>
+            <ciudad>Cádiz</ciudad>
+            <pais>España</pais>
+            <capacidad>20000</capacidad>
+        </estadio>
+    </estadios>
+</data>

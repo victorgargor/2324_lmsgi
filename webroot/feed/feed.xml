@@ -6,34 +6,70 @@
         <description>Aplicación Web LMSGI</description>
         <language>es-es</language>
         <pubDate>Thu, 18 Jan 2024 11:34:00 +0100</pubDate>
-        <lastBuildDate>Thu, 25 Apr 2024 13:53:00 +0100</lastBuildDate>
+        <lastBuildDate>Mon, 10 Jun 2024 18:30:00 +0100</lastBuildDate>
         <category>Índice</category>
         <item>
-            <title>XSLT 01</title>
-            <link>http://daw108.ieslossauces.es/ud6/01/target/01.html</link>
-            <description><![CDATA[<div>La práctica consiste en resolver custiones de XPath y hacer el DTD y el Schema del XML</div>]]></description>
-            <guid>http://daw108.ieslossauces.es/ud6/01/target/01.html</guid>
+            <title>Unidad 2</title>
+            <link>http://daw108.ieslossauces.es/ud2/11/index.html</link>
+            <description><![CDATA[<div>Práctica para trabajar distintos tipos de posicionamiento</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud2/11/index.html</guid>
             <category>Prácticas</category>
-            <pubDate>Wed, 13 Mar 2024 10:00:00 +0100</pubDate>
-            <enclosure url="http://daw108.ieslossauces.es/ud6/01/01.html" length="251" type="image/png"/>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud2/11/index.html" length="251" type="image/png"/>
         </item>
         <item>
-            <title>XPath 2</title>
-            <link>http://daw108.ieslossauces.es/ud5/02/index.html</link>
-            <description><![CDATA[<div>La práctica consiste en resolver custiones de XPath y hacer el DTD y el Schema del XML</div>]]></description>
-            <guid>http://daw108.ieslossauces.es/ud5/02/index.html</guid>
+            <title>Unidad 3</title>
+            <link>http://daw108.ieslossauces.es/ud3/01/01.xml</link>
+            <description><![CDATA[<div>Creación de un canal del periódico El País</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud3/01/01.xml</guid>
             <category>Prácticas</category>
-            <pubDate>Wed, 13 Mar 2024 10:00:00 +0100</pubDate>
-            <enclosure url="http://daw108.ieslossauces.es/ud5/02/index.html" length="251" type="image/png"/>
-        </item>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud3/01/01.xml" length="251" type="image/png"/>
+        </item>       
         <item>
-            <title>XPath 3</title>
+            <title>Unidad 4</title>
+            <link>http://daw108.ieslossauces.es/ud4/10/10.xsd</link>
+            <description><![CDATA[<div>Documentos que almacenan recetas de cocina</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud4/10/10.xsd</guid>
+            <category>Prácticas</category>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud4/10/10.xsd" length="251" type="image/png"/>
+        </item>       
+        <item>
+            <title>Unidad 5</title>
             <link>http://daw108.ieslossauces.es/ud5/03/index.html</link>
-            <description><![CDATA[<div>La práctica consiste en resolver custiones de XPath y hacer el DTD y el Schema del XML</div>]]></description>
+            <description><![CDATA[<div>Práctica para practicar consultas XPath</div>]]></description>
             <guid>http://daw108.ieslossauces.es/ud5/03/index.html</guid>
             <category>Prácticas</category>
-            <pubDate>Wed, 13 Mar 2024 10:00:00 +0100</pubDate>
-            <enclosure url="http://daw108.ieslossauces.es/ud5/03/index.html" length="250" type="image/png"/>
-        </item>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud5/03/index.html" length="251" type="image/png"/>
+        </item>       
+        <item>
+            <title>Unidad 6</title>
+            <link>http://daw108.ieslossauces.es/ud6/08/target/prediccion.html</link>
+            <description><![CDATA[<div>Realizar una tabla de predicción meteorológica empleando XSLT</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud6/08/target/prediccion.html</guid>
+            <category>Prácticas</category>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud6/08/target/prediccion.html" length="251" type="image/png"/>
+        </item>       
+        <item>
+            <title>Unidad 7</title>
+            <link>http://daw108.ieslossauces.es/ud7/04/target/04.html</link>
+            <description><![CDATA[<div>Práctica para practicar consultas con XQuery</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud7/04/target/04.html</guid>
+            <category>Prácticas</category>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud7/04/target/04.html" length="251" type="image/png"/>
+        </item>       
+        <item>
+            <title>Unidad 8</title>
+            <link>http://daw108.ieslossauces.es/ud8/07/07.json</link>
+            <description><![CDATA[<div>Configuración de parámetros para una aplicación con JSON</div>]]></description>
+            <guid>http://daw108.ieslossauces.es/ud8/07/07.json</guid>
+            <category>Prácticas</category>
+            <pubDate>Mon, 10 Jun 2024 18:30:00 +0100</pubDate>
+            <enclosure url="http://daw108.ieslossauces.es/ud8/07/07.json" length="251" type="image/png"/>
+        </item>              
     </channel>
 </rss>

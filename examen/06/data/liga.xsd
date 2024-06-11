@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="data">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="equipos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="equipo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="manager" type="xs:string"/>
+                                        <xs:element name="nombrecorto" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="apodo" type="xs:string"/>
+                                        <xs:element name="yearfundacion" type="xs:gYear"/>
+                                        <xs:element name="estadio" type="xs:int"/>
+                                        <xs:element name="jugadores">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="jugador" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nombre" type="xs:string"/>
+                                                                <xs:element name="nombreCamiseta" type="xs:string"/>
+                                                                <xs:element name="numeroCamiseta" type="xs:int"/>
+                                                                <xs:element name="posicion" type="xs:string"/>
+                                                                <xs:element name="fechaNacimiento" type="xs:date" minOccurs="0"/>
+                                                                <xs:element name="nacionalidad" type="xs:string"/>
+                                                                <xs:element name="altura" type="xs:int"/>
+                                                                <xs:element name="peso" type="xs:int"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="estadios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="estadio" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="ciudad" type="xs:string"/>
+                                        <xs:element name="pais" type="xs:string"/>
+                                        <xs:element name="capacidad" type="xs:int"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="competicion" type="xs:string" use="required"/>
+            <xs:attribute name="year" type="xs:gYear" use="required"/>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
